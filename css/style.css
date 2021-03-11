@@ -58,6 +58,7 @@ a{
   padding: 14px 14px 13px 14px;
   font-size: 14px;
   line-height: 21px;
+  border-radius: 0;
 }
 .input-normal{
   border: 1px solid #dadada;
