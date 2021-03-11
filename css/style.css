@@ -11,6 +11,7 @@ body{
   margin: 0;
 }
 body *{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -36,9 +37,64 @@ img{
   max-width: 280px;
   /* height: 32px; */
 }
+/* 로그인폼 */
+.login-form{
+  padding: 0 15px;
+}
+.login-form fieldset{
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+}
+.user-id{
+  background-color: salmon;
+  width: 100%;
+}
+/* 입력서식-input */
+.input{
+  width: 100%;
+  padding: 14px 14px 13px 14px;
+}
+.input-normal{
+  border: 1px solid #dadada;
+  color: #999;
+}
+.user-pw{
+  background-color: blueviolet;
+  width: 100%;
+}
+.keep-login{
+  background-color: lightgreen;
+  width: 50%;
+  order: 1;
+}
+.ip-security{
+  background-color: aqua;
+  width: 50%;
+  order: 1;
+  display: none;
+}
+.button-login{
+  background-color: yellow;
+  width: 100%;
+}
 @media screen and (min-width: 769px){
+  .brand {
+    padding: 106px 0 53px;
+  }
   .brand a{
     width: 230px;
     height: 44px;
+  }
+  .login-form{
+    display: flex;
+    justify-content: center;
+  }
+  .login-form fieldset{
+    width: 460px;
+  }
+  .ip-security{
+    display: flex;
+    justify-content: flex-end;
   }
 }
