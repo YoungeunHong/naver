@@ -24,6 +24,10 @@ img{
   max-width: 100%;
   height: auto;
 }
+a{
+  color: inherit;
+  text-decoration: none;
+}
 /* 로고 */
 .brand{
   display: flex;
@@ -60,7 +64,7 @@ img{
   color: #999;
 }
 .error-message{
-  display: block;
+  display: none;
   font-size: 13px;
   line-height: 18px;
   color: #ff1414;
@@ -78,14 +82,15 @@ img{
   background-color: lightgreen;
   width: 50%;
   order: 1;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 .ip-security{
   background-color: aqua;
   width: 50%;
   order: 1;
   display: none;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
+  color: #333;
 }
 .button-login{
   background-color: yellow;
@@ -102,6 +107,10 @@ img{
 .button-primary{
   background-color: #03c75a;
   color: #fff;
+}
+/* 링크 텍스트 -a */
+.ip-security a{
+  color: #333;
 }
 @media screen and (min-width: 769px){
   .brand {
